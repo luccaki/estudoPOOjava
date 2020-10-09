@@ -12,12 +12,9 @@ public class E6OperacoesStrings {
     public int contaPalavras(){
         int sum = 0;
         for(int i = 0; i < texto.length()-1; i++){
-            if((texto.charAt(i) != ' ' && texto.charAt(i) != '.') && (texto.charAt(i+1) == ' ' || texto.charAt(i+1) == '.' || texto.charAt(i+1) == 10)){
+            if((texto.charAt(i) != ' ' && texto.charAt(i) != '.') && (texto.charAt(i+1) == ' ' || texto.charAt(i+1) == '.' || texto.charAt(i+1) == 0 || texto.charAt(i+1) == 3)){
                 sum++;
             }
-        }
-        if(sum==0){
-            sum = 1;
         }
         return sum;
     }
